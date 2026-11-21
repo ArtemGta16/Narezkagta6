@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+{% block title %}GTA VI — Vice City Videos{% endblock %}
+{% block content %}
+
+<section class="hero">
+  <h1>WELCOME TO <span>VICE CITY</span></h1>
+  <p>Смотри лучшие трейлеры Grand Theft Auto VI в неоновом стиле.</p>
+  <a href="#videos" class="btn">Смотреть видео</a>
+</section>
+
+<section id="videos" class="video-grid">
+  {% for v in videos %}
+  <a href="/video/{{ v.id }}" class="card">
+    <div class="thumb">
+      <img src="{{ v.thumbnail }}" alt="{{ v.title }}" loading="lazy">
+      <span class="duration">{{ v.duration }}</span>
+      <div class="play">▶</div>
+    </div>
+    <div class="card-body">
+      <h3>{{ v.title }}</h3>
+      <p>{{ v.description[:90] }}...</p>
+      <div class="tags">
+        {% for t in v.tags %}<span>{{ t }}</span>{% endfor %}
+      </div>
+    </div>
+  </a>
+  {% endfor %}
+</section>
+
+{% endblock %}

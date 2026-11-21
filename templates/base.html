@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{% block title %}GTA VI Vice City Videos{% endblock %}</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+ <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+  <div class="sun"></div>
+  <div class="grid"></div>
+
+  <header class="navbar">
+    <a href="/static" class="logo">GTA<span>VI</span></a>
+    <nav>
+      <a href="/static">Трейлеры</a>
+      <a href="/static#videos">Все видео</a>
+      <a href="https://www.rockstargames.com/VI" target="_blank">Официальный сайт</a>
+    </nav>
+  </header>
+
+  <main>
+    {% block content %}{% endblock %}
+  </main>
+
+  <footer>
+    <p>© 2025 Vice City Videos · Fan-made, не связан с Rockstar Games</p>
+  </footer>
+
+  <script src="{{ url_for('static', filename='js/player.js') }}"></script>
+</body>
+</html>

@@ -1,0 +1,39 @@
+{% extends "base.html" %}
+{% block title %}{{ video.title }} — GTA VI{% endblock %}
+{% block content %}
+
+<section class="player-wrap">
+  <div class="player">
+    <iframe src="{{ video.embed }}" title="{{ video.title }}"
+      frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen></iframe>
+  </div>
+
+  <div class="video-info">
+    <h1>{{ video.title }}</h1>
+    <p>{{ video.description }}</p>
+    <div class="tags">
+      {% for t in video.tags %}<span>{{ t }}</span>{% endfor %}
+    </div>
+  </div>
+</section>
+
+{% if others %}
+<section class="others">
+  <h2>Смотри также</h2>
+  <div class="video-grid">
+    {% for v in others %}
+    <a href="/video/{{ v.id }}" class="card">
+      <div class="thumb">
+        <img src="{{ v.thumbnail }}" alt="{{ v.title }}" loading="lazy">
+        <span class="duration">{{ v.duration }}</span>
+        <div class="play">▶</div>
+      </div>
+      <div class="card-body"><h3>{{ v.title }}</h3></div>
+    </a>
+    {% endfor %}
+  </div>
+</section>
+{% endif %}
+
+{% endblock %}

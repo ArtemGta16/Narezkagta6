@@ -1,0 +1,29 @@
+[
+  {
+    "id": "gta6-trailer-1",
+    "title": "GTA VI — Official Trailer 1",
+    "description": "Первый официальный трейлер Grand Theft Auto VI от Rockstar Games. Возвращение в солнечный Vice City.",
+    "thumbnail": "https://img.youtube.com/vi/QdBZY2fkU-0/maxresdefault.jpg",
+    "embed": "https://www.youtube.com/embed/QdBZY2fkU-0?rel=0&modestbranding=1",
+    "duration": "1:30",
+    "tags": ["Official", "Trailer", "Vice City"]
+  },
+  {
+    "id": "gta6-trailer-2",
+    "title": "GTA VI — Trailer 2",
+    "description": "Второй трейлер GTA 6: Джейсон и Люсия, штат Леонида и неоновые улицы Vice City.",
+    "thumbnail": "https://img.youtube.com/vi/VQRLujxTm3c/maxresdefault.jpg",
+    "embed": "https://www.youtube.com/embed/VQRLujxTm3c?rel=0&modestbranding=1",
+    "duration": "2:15",
+    "tags": ["Official", "Trailer"]
+  },
+  {
+    "id": "gta6-analysis",
+    "title": "GTA VI — Разбор всех деталей трейлера",
+    "description": "Фанатский разбор пасхалок, карты и геймплейных механик из трейлера GTA 6.",
+    "thumbnail": "https://img.youtube.com/vi/eZ1p4Yc9w-8/maxresdefault.jpg",
+    "embed": "https://www.youtube.com/embed/eZ1p4Yc9w-8?rel=0&modestbranding=1",
+    "duration": "12:40",
+    "tags": ["Analysis", "Fan"]
+  }
+]
